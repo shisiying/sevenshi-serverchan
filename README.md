@@ -22,9 +22,8 @@ Now you are ready to use the Seven Facade, e.g. open routes/web.php:
 ``` PHP
 <?php
 
-Route::get('seven',function (){
-    Seven::setTitle('hi')->setMessage('hello world')->push();
-});
+   $reponse =  Seven::setTitle('hi')->setMessage('hello world')->push();
+
 
 ```
 
@@ -35,9 +34,9 @@ the channel comes from the [PushBear](http://pushbear.ftqq.com/admin/#/),and cha
 ``` PHP
 <?php
 
-Route::get('seven',function (){
-    Seven::setTitle('hi')->setMessage('hello every body')->setChannel('4794-e28b9dae54e86365773xxx')->pushbear();
-});
+
+    $response = Seven::setTitle('hi')->setMessage('hello every body')->setChannel('4794-e28b9dae54e86365773xxx')->pushbear();
+
 
 ```
 
@@ -54,4 +53,5 @@ pushbear:
     
     - {"code":0,"message":"","data":"1\u6761\u6d88\u606f\u5df2\u6210\u529f\u63a8\u9001\u5230\u53d1\u9001\u961f\u5217","created":"2018-07-18 14:43:05"}
     
+
 
