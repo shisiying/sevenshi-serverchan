@@ -1,0 +1,30 @@
+{
+    "name": "sevenshi/serverchan",
+    "description": "using the serve of serverChan to notify you",
+    "type": "library",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "seven",
+            "email": "xhzyxed@qq.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Sevenshi\\Serverchan\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sevenshi\\Serverchan\\SevenServiceProvider"
+            ],
+            "aliases": {
+                "Seven": "Sevenshi\\Serverchan\\SevenFacade"
+            }
+        }
+    }
+}
